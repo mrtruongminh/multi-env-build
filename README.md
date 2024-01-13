@@ -6,13 +6,11 @@ This project demonstrates how to use the same Docker image for multiple environm
 
 **Tech used:** Reactjs, Nginx, Docker
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write _something_. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+Here's how the project works:
 
-## Optimizations
-
-_(optional)_
-
-You don't have to include this section but interviewers _love_ that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
+- Build a Docker image, copying the config files (env-\*.js) and the bash file (start.sh).
+- The bash file reads the injected variable at runtime ($ENV), then decides which env.js file to use and move it into the nginx folder.
+- The webapp reads the config from that env.js file.
 
 ## References:
 
