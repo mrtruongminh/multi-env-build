@@ -1,1 +1,3 @@
-window.VITE_APP_TEST = 1;
+window.viteEnvs = {
+  VITE_APP_ENV: "DEV",
+};

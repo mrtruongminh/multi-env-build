@@ -1,1 +1,3 @@
-window.VITE_APP_TEST = 2;
+window.viteEnvs = {
+  VITE_APP_ENV: "UAT",
+};
